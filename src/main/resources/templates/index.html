@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Operaciones Básicas - AJAX</title>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    </head>
+<body>
+    <form onsubmit="event.preventDefault(); enviarDatos();">
+        <input type="text" id="num1" placeholder="Número 1" required>
+        <select id="operacion" name="operacion">
+            <option value="+">Suma</option>
+            <option value="-">Resta</option>
+            <option value="*">Multiplicación</option>
+            <option value="/">División</option>
+        </select>
+        <input type="text" id="num2" placeholder="Número 2" required>
+        <button type="submit">Calcular</button>
+    </form>
+    <div id="resultado"></div>
+    <script src="/assets/js/operaciones.js"></script>
+</body>
+</html>
