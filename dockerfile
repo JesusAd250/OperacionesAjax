@@ -2,9 +2,6 @@
 # Establece el directorio de trabajo en el contenedor
 WORKDIR /app
 
-# Copia los archivos de dependencias
-COPY package*.json ./
-
 # Instala las dependencias
 RUN npm install
 
