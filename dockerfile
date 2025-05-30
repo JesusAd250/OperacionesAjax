@@ -1,6 +1,11 @@
+# Imagen base oficial de Node.js
+FROM node:18-alpine
 
 # Establece el directorio de trabajo en el contenedor
 WORKDIR /app
+
+# Copia los archivos de dependencias primero (mejor caché)
+COPY package*.json ./
 
 # Instala las dependencias
 RUN npm install
